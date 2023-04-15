@@ -1,11 +1,33 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+
+//auth
+import app from "../../auth/firebase";
 
 //icons
 import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const goToProduct = () => {
+    navigate("/form");
+  };
+
+  //handle google login
+  const handleGoogle = () => {
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+
+    //popup
+    signInWithPopup(auth, provider).then((result) => {
+      console.log(result);
+      goToProduct();
+    });
+  };
+
   return (
     <Container>
       <div className="container">
@@ -16,7 +38,7 @@ const Login = () => {
               <span>Sign</span> into your account
             </p>
             <p className="para">Sign into your account now.</p>
-            <div className="button">
+            <div className="button" onClick={handleGoogle}>
               <FcGoogle className="icon" />
               <p>Google</p>
             </div>
@@ -42,7 +64,7 @@ const Login = () => {
               </div>
               <Link to="/forgot">Forgot password?</Link>
             </div>
-            <button>Sign in</button>
+            <button onClick={goToProduct}>Sign in</button>
           </div>
           <div className="signup">
             <p>

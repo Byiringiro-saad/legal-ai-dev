@@ -34,7 +34,7 @@ const TypeForm = () => {
         <>
           <Widget
             onSubmit={onSubmit}
-            id="D72yRZbV"
+            id="uf57tmys"
             style={{ width: "100%", height: "700px" }}
           />
         </>

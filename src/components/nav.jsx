@@ -13,11 +13,15 @@ const Nav = () => {
     navigate("/");
   };
 
-  const goToProduct = () => {
-    if (location.pathname === "/") {
-      navigate("/form");
-    }
+  const goToLogin = () => {
+    navigate("/login");
   };
+
+  // const goToProduct = () => {
+  //   if (location.pathname === "/") {
+  //     navigate("/form");
+  //   }
+  // };
 
   return (
     <Container>
@@ -26,9 +30,9 @@ const Nav = () => {
           <p>Faisala</p>
         </div>
         <div className="nav">
-          <Button onClick={goToProduct} disabled={location.pathname !== "/"}>
+          <Button onClick={goToLogin} disabled={location.pathname !== "/"}>
             <BsRocketTakeoffFill className="icon" />
-            <p>Try the product</p>
+            <p>Try for free</p>
           </Button>
         </div>
       </div>

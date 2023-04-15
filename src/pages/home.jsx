@@ -55,10 +55,10 @@ const Home = () => {
             learning algorithms to predict the likely outcome of consumer cases,
             empowering consumers to make more informed decisions.
           </p>
-          <div className="button" onClick={goToProduct}>
+          {/* <div className="button" onClick={goToProduct}>
             <BsRocketTakeoffFill className="icon" />
-            <p>Try the product</p>
-          </div>
+            <p>Try for free</p>
+          </div> */}
         </div>
         <div className="content">
           <div className="box">
