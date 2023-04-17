@@ -172,9 +172,9 @@ const Home = () => {
           Get the future of legal AI - Predict case outcomes, generate
           documents, and win more cases with Faisala.
         </p>
-        <div className="button" onClick={goToProduct}>
+        <div className="button" onClick={goToLogin}>
           <BsRocketTakeoffFill className="icon" />
-          <p>Try the product</p>
+          <p>Try for free</p>
         </div>
       </div>
     </Container>
@@ -207,7 +207,7 @@ const Container = styled.div`
     }
 
     @media only screen and (max-width: 480px) {
-      padding: 70px 10px;
+      padding: 10px 10px;
       justify-content: center;
     }
 
@@ -249,6 +249,7 @@ const Container = styled.div`
         @media only screen and (max-width: 480px) {
           text-align: center;
           font-size: 2.5em;
+          line-height: 55px;
         }
       }
 

@@ -15,15 +15,15 @@ const Footer = () => {
           </a>
         </div>
         <div className="icons">
-          <a href="#">
+          {/* <a href="#">
             <CiLinkedin className="big blue" />
-          </a>
+          </a> */}
           <a href="#">
             <BsSlack className="icon" />
           </a>
-          <a href="#">
+          {/* <a href="#">
             <BsTwitter className="icon blue" />
-          </a>
+          </a> */}
         </div>
       </div>
     </Container>
