@@ -2,17 +2,17 @@ import React from "react";
 import styled from "styled-components";
 
 // icons
-import { CiLinkedin } from "react-icons/ci";
-import { BsSlack, BsTwitter } from "react-icons/bs";
+import { BsSlack } from "react-icons/bs";
+
+//images
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
     <Container>
       <div className="content">
         <div className="links">
-          <a href="#" className="logo link">
-            Faisala
-          </a>
+          <img src={logo} alt="logo" />
         </div>
         <div className="icons">
           {/* <a href="#">
@@ -57,6 +57,10 @@ const Container = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+
+      img {
+        width: 10%;
+      }
 
       a {
         text-decoration: none;

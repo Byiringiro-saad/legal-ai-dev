@@ -37,7 +37,7 @@ const Home = () => {
         </div>
         <div className="image">
           <video
-            src="https://res.cloudinary.com/f-studios/video/upload/v1681455645/Predixion/Legal_ai/Faisala_product_intro_w0s5ie.mp4"
+            src="https://res.cloudinary.com/f-studios/video/upload/v1681731527/Predixion/Legal_ai/Faisala_product_concept_o6swb7.mp4"
             alt="hero"
             autoPlay={true}
             loop

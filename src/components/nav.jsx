@@ -5,6 +5,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 //icons
 import { BsRocketTakeoffFill } from "react-icons/bs";
 
+//images
+import logo from "../assets/logo.png";
+
 const Nav = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -27,7 +30,7 @@ const Nav = () => {
     <Container>
       <div className="content">
         <div className="logo" onClick={goHome}>
-          <p>Faisala</p>
+          <img src={logo} alt="logo" />
         </div>
         <div className="nav">
           <Button onClick={goToLogin} disabled={location.pathname !== "/"}>
@@ -120,13 +123,10 @@ const Container = styled.div`
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
       cursor: pointer;
 
-      p {
-        font-size: 1.5em;
-        font-weight: 700;
-        color: var(--black);
+      img {
+        width: 50%;
       }
     }
 
